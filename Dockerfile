@@ -37,7 +37,7 @@ COPY modules.conf /usr/src/freeswitch/
 RUN cd /usr/src/freeswitch && \
     ./bootstrap.sh && \
     ./configure --prefix=/opt/freeswitch --with-java=/usr/java/jdk1.6.0_16/include/ && \
-    make -j 12 && \
+    make && \
     make install && \
     make sounds-fr-install
 
